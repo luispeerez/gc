@@ -1,4 +1,4 @@
-gamec
+GC
 =====
 
 Proyecto escolar
