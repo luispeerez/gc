@@ -16,14 +16,20 @@
 					</div>
 					<nav>
 						<span class="blacksquare"></span>
-						<a href="#">Inicio</a>
-						<a href="#">Reseñas</a>
-						<a href="#">Catalogo</a>
-						<a href="#">Sucursales</a>
-						<a href="#">Contacto</a>
+						<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Reseñas</a></li>
+						<li><a href="#">Catalogo</a></li>
+						<li><a href="#">Sucursales</a></li>
+						<li><a href="#">Contacto</a></li>							
+						</ul>
 					</nav>
 				</header>
-				<aside></aside>
+				<aside>
+					<a href="#" class="fb"></a>
+					<a href="#" class="tw"></a>
+					<a href="#" class="yt"></a>
+				</aside>
 
 				<div id="content">
-					
+
