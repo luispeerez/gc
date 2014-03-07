@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Gamecentral</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+
 </head>
 <body>
 	<div id="wrap">
@@ -11,11 +13,19 @@
 			
 			<div id="main">
 				<header>
-					<div class="logobar">
-						<a href="/"><img src="img/Logo.png" alt="GameCentral"></a>
+					<div class="shadowblock">
+						<div class="logobar">
+							<a href="/"><img src="img/Logo.png" alt="GameCentral"></a>
+							<div class="social">
+								<a href="#" class="fb transition animated fadeInDown"></a>
+								<a href="#" class="tw transition animated fadeInDown"></a>
+								<a href="#" class="yt transition animated fadeInDown"></a>
+							</div>
+							<div class="clear"></div>
+						</div>
 					</div>
-					<nav>
-						<span class="blacksquare"></span>
+
+					<nav class="animated">
 						<ul>
 						<li><a href="#">Inicio</a></li>
 						<li><a href="#">Reseñas</a></li>
@@ -25,11 +35,5 @@
 						</ul>
 					</nav>
 				</header>
-				<aside>
-					<a href="#" class="fb"></a>
-					<a href="#" class="tw"></a>
-					<a href="#" class="yt"></a>
-				</aside>
-
 				<div id="content">
 
