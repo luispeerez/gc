@@ -47,10 +47,31 @@ aside a.yt:hover{background:  url(../img/Youtube_Hover.png) no-repeat center;}
 .video_container iframe,.video_container object,.video_container embed,.video_container video{height: 100%;left: 0;position: absolute;top: 0;width: 100%;} 
 
 #content{padding-top: 107px}
-#content .container{margin: 0 auto;max-width: 1000px;}
+#content .container{margin: 0 auto;max-width: 813px;}
 
 /*Reseña*/
-#content .container{color: #373737}
-#content .container h1{font-size: 32px;font-weight: 900;margin-top: -18px}
-#content .container h2{font-size: 18px}
+#content .container{color: #373737;position: relative;}
+#content .container .imagepost{margin-bottom: -64px;position: relative;}
+#content .container .imagepost .overlay{height: 100%;left: 0;position: absolute;top: 0;width: 100%;
+	background: -webkit-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: -o-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: -moz-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+
+}
+#content .container .imagepost img{/*opacity: 0.4;*/width: 100%;}
+#content .container .singlepost{position: relative;}
+#content .container .singlepost .postTitle{margin-bottom: 10px}
+#content .container .singlepost .postTitle h1{background: url(../img/barra.png) no-repeat left 48px;font-size: 34px;font-weight: 900;margin-top: -18px}
+#content .container .singlepost .postTitle h2{font-size: 18px}
 #content .container p{font-size: 15px;line-height: 20px;text-align: justify;}
+
+/*Responsive Layout*/
+@media all and (max-width: 979px){
+	#content{padding: 107px 12px 0}
+	#content .container .postTitle{margin-top: -60px}
+	aside , header nav span.blacksquare{display: none;}
+}
+
+/*Retina conditions*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {}
