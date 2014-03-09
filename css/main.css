@@ -101,6 +101,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .notices .box{float: left;width: 46%;}
 #content .container .notices .box + .box{margin-left: 4%}
 #content .container .notices .box .imagepost{margin-bottom: -33px}
+#content .container .notices .box .imagepost .overlay{display: none;}
 #content .container .notices .box .postTitle{margin-bottom: 0}
 #content .container .notices .box .postTitle h1{background: none;font-size: 18px;line-height: 20px;margin: 2px 0 5px}
 #content .container .notices .box .postTitle h2{background: url(../img/barra.png) no-repeat -42px bottom;font-size: 14px}

@@ -12,7 +12,7 @@
 		</section>
 		<section class="notices">
 			<div class="box">
-		 		<div class="imagepost"><div class="overlay"></div><img src="img/gta.jpg" alt="Grand Theft Auto V"></div>
+		 		<div class="imagepost"><div class="overlay"></div><img src="img/titan.png" alt="Grand Theft Auto V"></div>
 				<section class="singlepost">
 			 		<div class="postTitle">
 				 		<h2>Noticias</h2>
@@ -25,7 +25,7 @@
 				</section>
 			</div>
 			<div class="box">
-		 		<div class="imagepost"><div class="overlay"></div><img src="img/gta.jpg" alt="Grand Theft Auto V"></div>
+		 		<div class="imagepost"><div class="overlay"></div><img src="img/castle.png" alt="Grand Theft Auto V"></div>
 				<section class="singlepost">
 			 		<div class="postTitle">
 				 		<h2>Noticias</h2>
