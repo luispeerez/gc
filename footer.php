@@ -25,6 +25,7 @@
 	</div>
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 <script src="js/interactions.js"></script>
 
 </body>

@@ -5,6 +5,7 @@
 	<title>Gamecentral</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="http://static.wixstatic.com/ficons/f0ce39_5bd31518a05d46fe8f0d57b61526d03e_fi.ico" rel="icon" type="image/x-icon" />
 
 </head>
@@ -26,8 +27,8 @@
 					</div>
 					<nav class="animated">
 						<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Reseñas</a></li>
+						<li><a href="/home.php">Inicio</a></li>
+						<li><a href="/">Reseñas</a></li>
 						<li><a href="#">Catalogo</a></li>
 						<li><a href="#">Sucursales</a></li>
 						<li><a href="#">Contacto</a></li>							

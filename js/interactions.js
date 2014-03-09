@@ -4,6 +4,9 @@ var phoneSize = 767;
 var tabletSize = 979;
 var slider;
 $(document).ready(function(){
+
+	$('.bxslider').bxSlider({adaptiveHeight:true});
+
 	screenSize = $(window).width();
 });
 $(window).resize(function(){
