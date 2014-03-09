@@ -19,11 +19,12 @@ $(window).scroll(function(){
 		$('nav').addClass('scrolled');
 		$('nav').addClass('fadeInDown');
 		$('header .social').hide();
-
+		$('header').addClass('down');
 	}
 	else{
 		$('nav').removeClass('scrolled');
 		$('nav').removeClass('fadeInDown');	
+		$('header').removeClass('down');
 		$('header .social').show();
 
 	}

@@ -56,6 +56,8 @@ header nav.scrolled{background-color: inherit;bottom: 0;position: absolute;z-ind
 	-ms-transition: none;
 	transition: none;
 }
+header .mist{background:  url(../img/Degradado.png) no-repeat center;display: none;height: 50px;left: 0;position: absolute;top: 70px;width: 100%;}
+header.down .mist{display: block;}
 header nav ul{margin: 0 auto;max-width: 960px;}
 header nav li:nth-child(1){width: 13%}
 header nav li{display: inline-block;width: 14%;text-align: center;}
@@ -90,12 +92,42 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .singlepost .postTitle h2{font-size: 18px}
 #content .container p{font-size: 15px;line-height: 20px;text-align: justify;}
 
+/*Footer*/
+#footer{background-color: #FF4343;margin: 0}
+#footer .container{margin: 0 auto;max-width: 960px;}
+#footer .column{color: #fff;float: left;font-size: 14px;line-height: 20px;padding: 10px 0;text-align: left;width: 33%;}
+#footer .column h3{font-size: 18px}
+#footer .column h3 a{color: #fff}
+#footer .column.middle{text-align: center;}
+#footer .column.middle a{display: inline-block;margin: 0px auto 8px;height: 44px;width: 46px;}
+#footer .column.middle a.fb{background: url(../img/Facebook_white.png) no-repeat center;}
+#footer .column.middle a.tw{background: url(../img/Twitter_white.png) no-repeat center;}
+#footer .column.middle a.yt{background: url(../img/Youtube_white.png) no-repeat center;}
+
+#footer .column.right{float: right;text-align: right;}
+
 /*Responsive Layout*/
 @media all and (max-width: 979px){
 	#content{padding: 107px 12px 0}
 	#content .container .postTitle{margin-top: -60px}
 	aside , header nav span.blacksquare{display: none;}
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#footer .column{float: none!important;padding: 6px 3%;text-align: center!important;width: 96%}
+}
+
 
 /*Retina conditions*/
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {}
