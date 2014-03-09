@@ -85,15 +85,22 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
 
 }
-#content .container .imagepost img{/*opacity: 0.4;*/width: 100%;}
+#content .container .imagepost img{/*opacity: 0.4;*/max-height: 228px;width: 100%;}
 #content .container .singlepost{position: relative;}
 #content .container .singlepost .postTitle{margin-bottom: 10px}
 #content .container .singlepost .postTitle h1{background: url(../img/barra.png) no-repeat left 48px;font-size: 34px;font-weight: 900;margin-top: -18px}
 #content .container .singlepost .postTitle h2{font-size: 18px}
 #content .container p{font-size: 15px;line-height: 20px;text-align: justify;}
 
+
+/*Home*/
+#content .container .singlepost.home{}
+#content .container .singlepost.home p{float: left;padding-right:5%;width: 45%;}
+#content .container .singlepost.home .videobox{float: left;margin: -10px 0 0;width: 50%;}
+
+
 /*Footer*/
-#footer{background-color: #FF4343;margin: 0}
+#footer{background-color: #FF4343;margin: 25px 0 0}
 #footer .container{margin: 0 auto;max-width: 960px;}
 #footer .column{color: #fff;float: left;font-size: 14px;line-height: 20px;padding: 10px 0;text-align: left;width: 33%;}
 #footer .column h3{font-size: 18px}
@@ -125,7 +132,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	#footer .column{float: none!important;padding: 6px 3%;text-align: center!important;width: 96%}
+	#footer .column{float: none!important;padding: 6px;text-align: center!important;width: auto}
 }
 
 
