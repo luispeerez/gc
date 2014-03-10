@@ -12,6 +12,8 @@
 	 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, earum, aspernatur, modi placeat corporis dolorem voluptatibus cupiditate nostrum impedit quae veniam vitae est soluta suscipit velit dolores rem esse ad?</p>
 			<div class="videobox"><div class="video_container"><iframe  src="//www.youtube.com/embed/N-xHcvug3WI" frameborder="0" allowfullscreen></iframe></div></div>
 		</section>
+
+		<div class="fb-comments" data-href="http://example.com/comments" data-width="960" data-numposts="5" data-colorscheme="light"></div>
 	</div>
 
 <?php include("footer.php"); ?>

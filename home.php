@@ -2,14 +2,29 @@
 
  	<div class="container">
  		<div class="imagepost"><div class="overlay"></div><img src="img/unirte.png" alt="Grand Theft Auto V"></div>
-		<section class="singlepost home">
+		<section class="singlepost home title">
 	 		<div class="postTitle">
 		 		<h1>¿Quieres tener tu propio tienda de videojuegos?</h1>
 	 		</div>
+		</section>
+		<section class="singlepost home">
 			<p>Conoce nuestro novedoso sistema de trabajo y forma parte de la industria de los  video juegos. Tenemos todo lo que necesitas. Muchas gracias  a nuestro amigo MYM ALK4PON3 por el apoyo.</p>
 			<div class="videobox"><div class="video_container"><iframe width="560" height="315" src="//www.youtube.com/embed/L-qgVMH_P0g" frameborder="0" allowfullscreen></iframe></div></div>
 			<div class="clear"></div>
 		</section>
+		<section class="gallery">
+			<ul class="bxslider">
+			  <li><img src="/img/slide1.jpg" alt="slide1" /></li>
+			  <li><img src="/img/slide2.jpg" alt="slide" /></li>
+			  <li><img src="/img/slide3.jpg" alt="slide" /></li>
+			  <li><img src="/img/slide4.jpg" alt="slide" /></li>
+			</ul>
+			<a class="twitter-timeline" href="https://twitter.com/GameCentral_" data-widget-id="443082860828717056">Tweets por @GameCentral_</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+
+		</section>
+		<div class="clear"></div>
 		<section class="notices">
 			<div class="box">
 		 		<div class="imagepost"><div class="overlay"></div><img src="img/titan.png" alt="Grand Theft Auto V"></div>
@@ -37,14 +52,6 @@
 				</section>
 			</div>
 			<div class="clear"></div>
-		</section>
-		<section class="gallery">
-			<ul class="bxslider">
-			  <li><img src="/img/slide1.jpg" alt="slide1" /></li>
-			  <li><img src="/img/slide2.jpg" alt="slide" /></li>
-			  <li><img src="/img/slide3.jpg" alt="slide" /></li>
-			  <li><img src="/img/slide4.jpg" alt="slide" /></li>
-			</ul>
 		</section>
 		<div class="clear"></div>
 	</div>
