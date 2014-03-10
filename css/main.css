@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: Gamecentral
 Description: Custom Theme for Gamecentral
 Author: TutacheStudios
@@ -98,6 +98,9 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .singlepost.home.title{float: none;width: 100%}
 #content .container .singlepost.home p{/*float: left;padding-right:5%;width: 55%;*/}
 #content .container .singlepost.home .videobox{/*float: left;margin: -10px 0 0;width: 40%;*/margin: 10px 0}
+#content .container .gallery{float: right;height: 400px;width: 40%;}
+#content .container .gallery .bx-wrapper{z-index: 1}
+#content .container .gallery img{max-height: 350px;margin: 0 auto}
 #content .container .notices{float: left;width: 60%;}
 #content .container .notices .box{float: left;width: 46%;}
 #content .container .notices .box + .box{margin-left: 4%}
@@ -107,9 +110,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .notices .box .postTitle h1{background: none;font-size: 18px;line-height: 20px;margin: 2px 0 5px}
 #content .container .notices .box .postTitle h2{background: url(../img/barra.png) no-repeat -42px bottom;font-size: 14px}
 #content .container .notices .box .singlepost p{text-align: left;}
-#content .container .gallery{float: right;height: 400px;width: 40%;}
-#content .container .gallery .bx-wrapper{z-index: 1}
-#content .container .gallery img{max-height: 400px;margin: 0 auto}
+#content .container .twitterfeed{float: left;width: 40%}
 
 /*Footer*/
 #footer{background-color: #FF4343;margin: 25px 0 0;

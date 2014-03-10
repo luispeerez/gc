@@ -19,10 +19,6 @@
 			  <li><img src="/img/slide3.jpg" alt="slide" /></li>
 			  <li><img src="/img/slide4.jpg" alt="slide" /></li>
 			</ul>
-			<a class="twitter-timeline" href="https://twitter.com/GameCentral_" data-widget-id="443082860828717056">Tweets por @GameCentral_</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			<div class="clear"></div>
-
 		</section>
 		<div class="clear"></div>
 		<section class="notices">
@@ -52,6 +48,10 @@
 				</section>
 			</div>
 			<div class="clear"></div>
+		</section>
+		<section class="twitterfeed">
+			<a class="twitter-timeline" href="https://twitter.com/GameCentral_" data-widget-id="443082860828717056">Tweets por @GameCentral_</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</section>
 		<div class="clear"></div>
 	</div>
