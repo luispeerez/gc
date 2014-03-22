@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/supersized.css">
 	<link href="http://static.wixstatic.com/ficons/f0ce39_5bd31518a05d46fe8f0d57b61526d03e_fi.ico" rel="icon" type="image/x-icon" />
 
 </head>
@@ -18,6 +19,7 @@
 	  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=287929584699013";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+	<div id="supersized"></div>
 	<div id="wrap">
 		<div id="topBackRepeat">	
 			<div id="main">

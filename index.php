@@ -13,7 +13,7 @@
 			<div class="videobox"><div class="video_container"><iframe  src="//www.youtube.com/embed/N-xHcvug3WI" frameborder="0" allowfullscreen></iframe></div></div>
 		</section>
 
-		<div class="fb-comments" data-href="http://example.com/comments" data-width="960" data-numposts="5" data-colorscheme="light"></div>
+		<div class="fb-comments" data-href="http://example.com/comments" data-width="910" data-numposts="5" data-colorscheme="light"></div>
 	</div>
 
 <?php include("footer.php"); ?>
