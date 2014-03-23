@@ -5,7 +5,7 @@ var tabletSize = 979;
 var slider;
 $(document).ready(function(){
 	$.supersized({
-		slides  :  	[ {image : '/img/plants.jpg', title : ''} ]
+		slides  :  	[ {image : '/img/plants2.jpg', title : ''} ]
 	});
 	$('.bxslider').bxSlider({adaptiveHeight:true});
 

@@ -74,11 +74,12 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 .videobox{margin: 10px auto;z-index: 1}
 .video_container{height: 0;margin: 10px 0;overflow: hidden;padding-bottom: 56.25%;padding-top: 30px;position: relative;}
 .video_container iframe,.video_container object,.video_container embed,.video_container video{height: 100%;left: 0;position: absolute;top: 0;width: 100%;} 
-#content{background: url(../img/plants.jpg) center;padding-top: 107px}
+#content{padding-top: 107px}
 #content .container{background-color: #e9eaed;color: #373737;margin: 0 auto;max-width: 920px;padding: 20px;position: relative;
 	box-shadow: inset -7px 0px 6px -7px , inset 9px 0px 6px -10px;
 }
 #content .container .card{background-color: #fff;-moz-box-shadow: 0 4px 2px -2px gray;-webkit-box-shadow: 0 4px 2px -2px gray;box-shadow: 0 4px 2px -2px gray;}
+#content .container p{font-size: 15px;line-height: 20px;}
 
 
 /*Reseña*/
@@ -95,7 +96,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .singlepost .postTitle{margin-bottom: 10px}
 #content .container .singlepost .postTitle h1{background: url(../img/barra.png) no-repeat left 48px;font-size: 34px;font-weight: 900;margin-top: -18px}
 #content .container .singlepost .postTitle h2{font-size: 18px}
-#content .container p{font-size: 15px;line-height: 20px;text-align: justify;}
+#content .container .singlepost p{text-align: justify;}
 
 
 /*Home*/
@@ -121,6 +122,20 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container.home .gallery .bx-wrapper{z-index: 1}
 #content .container.home .gallery img{;margin: 0 auto}
 #content .container.home .twitterfeed{padding: 6px}
+
+/*Sucursales*/
+#content .container .sucursal{padding: 10px;position: relative;}
+#content .container .sucursal + .sucursal{margin-top: 15px}
+#content .container .sucursal .map{float: left;width: 30%}
+#content .container .sucursal .text{border-left: 1px solid #9A9A9A;float: left;margin:0 4% 10px 4%;padding: 0 2.5% 10px;width: 52%}
+#content .container .sucursal h2{background: url(../img/barra.png) no-repeat left 36px;font-size: 26px;font-weight: 900;}
+#content .container .sucursal a.fb{background: url(../img/facebook_square.png) no-repeat;display: block;height: 64px;right: 0;position: absolute;top: 0;width: 70px;}
+#content .container .sucursal a.fb:hover{background: url(../img/facebook_square_selected.png) no-repeat}
+#content .container .sucursal.odd .map{float: right}
+#content .container .sucursal.odd .text{border: 0;border-right: 1px solid #9A9A9A;text-align: right;}
+#content .container .sucursal.odd h2{background-position-x:138px}
+#content .container .sucursal.odd a.fb{left: 0;right: auto;}
+
 
 /*Footer*/
 #footer{background-color: #FF4343;margin: 0px 0 0;}

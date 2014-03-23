@@ -40,7 +40,7 @@
 						<li><a href="/home.php">Inicio</a></li>
 						<li><a href="/">Reseñas</a></li>
 						<li><a href="#">Catalogo</a></li>
-						<li><a href="#">Sucursales</a></li>
+						<li><a href="/sucursales.php">Sucursales</a></li>
 						<li><a href="#">Contacto</a></li>							
 						</ul>
 					</nav>
