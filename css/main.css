@@ -19,6 +19,8 @@ a:hover{text-decoration:none;}
 strong{font-weight: bold;}
 h1{font-size: 26px;font-weight: 900;}
 h1 + hr{background: url(../img/barra.png) no-repeat left 0;border: 0;height: 5px;margin: -10px 0 16px;width: 246px}
+h2{font-size: 22px;}
+h3{font-size: 18px;}
 .transition{
 	webkit-transition: all 1s;
 	-moz-transition: all 1s;
@@ -80,9 +82,6 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 }
 #content .container .card{background-color: #fff;-moz-box-shadow: 0 4px 2px -2px gray;-webkit-box-shadow: 0 4px 2px -2px gray;box-shadow: 0 4px 2px -2px gray;}
 #content .container p{font-size: 15px;line-height: 20px;}
-
-
-/*Reseña*/
 #content .container .imagepost{margin-bottom: -64px;position: relative;}
 #content .container .imagepost .overlay{height: 100%;left: 0;position: absolute;top: 0;width: 100%;
 	background: -webkit-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
@@ -123,12 +122,16 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container.home .gallery img{;margin: 0 auto}
 #content .container.home .twitterfeed{padding: 6px}
 
+/*Review o noticia*/
+#content .container .review{padding: 15px}
+
 /*Sucursales*/
-#content .container .sucursal{padding: 10px;position: relative;}
+#content .container .sucursal{padding: 2.5% 0;position: relative;}
 #content .container .sucursal + .sucursal{margin-top: 15px}
-#content .container .sucursal .map{float: left;width: 30%}
-#content .container .sucursal .text{border-left: 1px solid #9A9A9A;float: left;margin:0 4% 10px 4%;padding: 0 2.5% 10px;width: 52%}
+#content .container .sucursal .map{float: left;height: 182px;padding: 0 2.5%;width: 30%}
+#content .container .sucursal .text{border-left: 1px solid #9A9A9A;float: left;padding: 0 2%;width: 60%}
 #content .container .sucursal h2{background: url(../img/barra.png) no-repeat left 36px;font-size: 26px;font-weight: 900;}
+#content .container .sucursal p{line-height: 28px}
 #content .container .sucursal a.fb{background: url(../img/facebook_square.png) no-repeat;display: block;height: 64px;right: 0;position: absolute;top: 0;width: 70px;}
 #content .container .sucursal a.fb:hover{background: url(../img/facebook_square_selected.png) no-repeat}
 #content .container .sucursal.odd .map{float: right}
@@ -136,6 +139,9 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .sucursal.odd h2{background-position-x:138px}
 #content .container .sucursal.odd a.fb{left: 0;right: auto;}
 
+/*Contacto*/
+#content .container .contactbox{padding: 15px}
+#content .container .contactbox input[type="text"] , .contactbox textarea{background-color: #CBCBCB;border: 0;border-radius: 3px;margin-bottom: 10px;padding: 6px;width: 85%;}
 
 /*Footer*/
 #footer{background-color: #FF4343;margin: 0px 0 0;}

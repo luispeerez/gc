@@ -37,11 +37,11 @@
 					</div>
 					<nav class="animated">
 						<ul>
-						<li><a href="/home.php">Inicio</a></li>
-						<li><a href="/">Reseñas</a></li>
+						<li><a href="/">Inicio</a></li>
+						<li><a href="/review.php">Reseñas</a></li>
 						<li><a href="#">Catalogo</a></li>
 						<li><a href="/sucursales.php">Sucursales</a></li>
-						<li><a href="#">Contacto</a></li>							
+						<li><a href="/contacto.php">Contacto</a></li>							
 						</ul>
 					</nav>
 					<div class="mist"></div>
