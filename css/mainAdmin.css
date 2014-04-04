@@ -1,0 +1,4 @@
+#wrapper.loginadmin{padding-left: 0}
+#wrapper .row , #wrapper select{margin-bottom: 10px}
+#wrapper input[type="submit"]{margin-top: 10px}
+#wrapper select{width: 20%}
