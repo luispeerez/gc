@@ -52,8 +52,8 @@
               <li class="dropdown user-dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $usuarioActivo ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                  <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                  <!--<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>-->
+                  <li><a href="/modificarusuario.php?id_usuario=<?php echo $usuarioActivoID ?>"><i class="fa fa-gear"></i> Configuracion</a></li>
                   <li class="divider"></li>
                   <li><a href="controladores/logout.php"><i class="fa fa-power-off"></i> Log Out</a></li>
                 </ul>

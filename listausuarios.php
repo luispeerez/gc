@@ -9,7 +9,7 @@
     </tr>
     <?php 
     while($reg = $db->makeArray($rs)){
-      echo "<td>".$reg['id_usuario']."</td><td>".$reg['nombre_usuario']."</td><td>".$reg['contrasena']."</td><td>".$reg['tipo_usuario']."</td><td><a href='editarnoticia.php?id_noticia='>Modificar informacion de usuario</a></td></tr>";
+      echo "<td>".$reg['id_usuario']."</td><td>".$reg['nombre_usuario']."</td><td>".$reg['contrasena']."</td><td>".$reg['tipo_usuario']."</td><td><a href='modificarusuario.php?id_usuario=".$reg['id_usuario']."'>Modificar informacion de usuario</a></td></tr>";
     }
     ?>
   </table>
