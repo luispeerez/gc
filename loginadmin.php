@@ -42,7 +42,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                       <div style="margin-top:10px" class="form-group">
                           <div class="col-sm-12 controls">
                             <!--<a id="btn-login" href="#" class="btn btn-success">Iniciar Sesión  </a>-->
-                            <input type="submit" value="Iniciar Sesión">
+                              <button type="submit" class="btn btn-default">Iniciar Sesión</button>
                           </div>
                       </div>
                     </form>     

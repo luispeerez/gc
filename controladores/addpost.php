@@ -11,10 +11,10 @@ if( (isset($_POST['tituloNoticia'])) && (isset($_POST['tipoNoticia'])) && (isset
   $tituloNoticia = $_POST['tituloNoticia'];
   $tipoNoticia = $_POST['tipoNoticia'];
   $contenidoNoticia = $_POST['contenidoNoticia'];
-  //$fecha = $_POST['fecha'];
-  //$autor = $_POST['autor'];
+  $fecha = $_POST['fecha'];
+  $autor = $_POST['autor'];
   $db = new Conexion();
-  $rs = $db->makeQuery("UPDATE noticia SET titulo_noticia='".$tituloNoticia."' , tipo_noticia='".$tipoNoticia."' , contenido_noticia='".$contenidoNoticia."' WHERE id_noticia=".$idNoticia);
+    $rs = $db->makeQuery("INSERT INTO noticia values('', '".$tituloNoticia."' , '".$tipoNoticia."' , '".$contenidoNoticia."' , '".$fecha."' , '".$autor."')");
   $db->close(); 
 }
 header('Location: /indexadmin.php');

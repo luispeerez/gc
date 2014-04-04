@@ -40,6 +40,13 @@
             <ul class="nav navbar-nav side-nav">
               <li class="<?php if($paginaActual=='indexadmin') echo 'active'; ?>"><a href="/indexadmin.php"><i class="fa fa-dashboard"></i> Menu Principal</a></li>
               <li class="<?php if($paginaActual=='crearnoticia') echo 'active'; ?>"><a href="/crearnoticia.php"><i class="fa fa-plus"></i> Nueva noticia</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-group"></i> Usuarios <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/agregarusuario.php">Agregar usuario</a></li>
+                  <li><a href="/listausuarios.php">Lista de usuarios</a></li>
+                </ul>
+              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-user">
               <li class="dropdown user-dropdown">

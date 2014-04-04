@@ -4,7 +4,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/nicEdit.js"></script>
     <script>
-    	new nicEditor().panelInstance('newPost');
+    	new nicEditor({fullPanel : true}).panelInstance('newPost');
     </script>
 
   </body>

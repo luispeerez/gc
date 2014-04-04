@@ -34,7 +34,7 @@ if(isset($_GET['id_noticia'])){
 		<input type="hidden" name="fecha" value="<?php echo $fecha ?>">
 		<input type="hidden" name="autor" value="<?php echo $autor ?>">
 		<input type="hidden" name="idNoticia" value="<?php echo $idNoticia ?>">
-		<input type="submit" value="Editar noticia">
+		<button type="submit" class="btn btn-default">Editar noticia</button>
 	</form>
 
 <?php include('footerAdmin.php'); ?>

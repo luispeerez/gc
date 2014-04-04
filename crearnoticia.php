@@ -4,8 +4,7 @@
 	<form action="/controladores/addpost.php" method="POST">
 		<div class="row">
 			<div class="col-lg-7">
-				<div class="input-group">
-					<span class="input-group-addon">@</span>
+				<div class="form-group">
 					<input type="text" class="form-control" placeholder="Nombre del post" name="tituloNoticia">
 				</div>
 			</div>
@@ -16,7 +15,7 @@
 			<option value="Tumama">Tumama</option>
 		</select>
 		<textarea name="contenidoNoticia" id="newPost" cols="120" rows="10"></textarea>
-		<input type="submit" value="Crear noticia">
+		<button type="submit" class="btn btn-default">Crear noticia</button>
 	</form>
 
 <?php include('footerAdmin.php'); ?>
