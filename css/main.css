@@ -141,7 +141,8 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 
 /*Contacto*/
 #content .container .contactbox{padding: 15px}
-#content .container .contactbox input[type="text"] , .contactbox textarea{background-color: #CBCBCB;border: 0;border-radius: 3px;margin-bottom: 10px;padding: 6px;width: 85%;}
+#content .container .contactbox input[type="text"] , .contactbox textarea{background-color: #CC3333;border: 2;border-radius: 4px;margin-bottom: 23px;padding: 6px;width: 85%;}
+/*#content .container .contactbuton {padding: 15px}*/
 
 /*Footer*/
 #footer{background-color: #FF4343;margin: 0px 0 0;}

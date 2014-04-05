@@ -47,6 +47,7 @@
                   <li><a href="/listausuarios.php">Lista de usuarios</a></li>
                 </ul>
               </li>
+              <li class="<?php if($paginaActual=='cambiarbg') echo 'active'; ?>"><a href="/cambiarbg.php"><i class="fa fa-picture-o"></i> Cambiar background</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-user">
               <li class="dropdown user-dropdown">
