@@ -166,7 +166,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .sucursal a.fb:hover{background: url(../img/facebook_square_selected.png) no-repeat}
 #content .container .sucursal.odd .map{float: right}
 #content .container .sucursal.odd .text{border: 0;border-right: 1px solid #9A9A9A;text-align: right;}
-#content .container .sucursal.odd h2{background-position-x:138px}
+#content .container .sucursal.odd h2{background: url(../img/bar_inverse.png) no-repeat left 36px;font-size: 26px;font-weight: 900; background-position-x:310px}
 #content .container .sucursal.odd a.fb{left: 0;right: auto;}
 
 /*Contacto*/
