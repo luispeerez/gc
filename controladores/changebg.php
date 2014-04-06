@@ -26,6 +26,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
       "../img/bg/" . 'bg1.' . $extension);
       }
       header('Location: /cambiarbg.php');
+      Exit();
 
   }
 }

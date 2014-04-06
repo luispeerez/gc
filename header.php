@@ -9,6 +9,16 @@
 	<link rel="stylesheet" href="css/supersized.css">
 	<link href="http://static.wixstatic.com/ficons/f0ce39_5bd31518a05d46fe8f0d57b61526d03e_fi.ico" rel="icon" type="image/x-icon" />
 
+<script>
+	<?php 
+	if (file_exists('img/bg/bg1.jpg')) {
+	    echo "var bodyBackground = 'bg1.jpg';";
+	} else {
+	    echo "var bodyBackground = 'bg1.png';";
+	}
+	?>
+</script>
+
 </head>
 <body>
 	<div id="fb-root"></div>
