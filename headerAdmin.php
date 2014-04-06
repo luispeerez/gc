@@ -3,10 +3,12 @@
   include("clases/conexion.php");
   $foo = explode( ".php", basename($_SERVER['PHP_SELF']));
   $paginaActual = $foo[0];
+  $tipoUsuario = "";
   session_start();
   if(isset($_SESSION['usuarioActivo'])){
   $usuarioActivo = $_SESSION['usuarioActivo'];
   $usuarioActivoID = $_SESSION['usuarioActivoID'];
+  $tipoUsuario = $_SESSION['tipoUsuario'];
   }
 ?>
 <!DOCTYPE html>
@@ -30,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Administrador Gamecentral <?php echo $usuarioActivo."".$usuarioActivoID ?></a>
+          <a class="navbar-brand" href="/indexadmin.php">Administrador Gamecentral</a>
         </div>
         
         <!--Solo en el usuario loggeado-->
@@ -40,13 +42,15 @@
             <ul class="nav navbar-nav side-nav">
               <li class="<?php if($paginaActual=='indexadmin') echo 'active'; ?>"><a href="/indexadmin.php"><i class="fa fa-dashboard"></i> Menu Principal</a></li>
               <li class="<?php if($paginaActual=='crearnoticia') echo 'active'; ?>"><a href="/crearnoticia.php"><i class="fa fa-plus"></i> Nueva noticia</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-group"></i> Usuarios <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/agregarusuario.php">Agregar usuario</a></li>
-                  <li><a href="/listausuarios.php">Lista de usuarios</a></li>
-                </ul>
-              </li>
+              <?php if($tipoUsuario == 'administrador'): ?>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-group"></i> Usuarios <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/agregarusuario.php">Agregar usuario</a></li>
+                    <li><a href="/listausuarios.php">Lista de usuarios</a></li>
+                  </ul>
+                </li>
+              <?php endif; ?>
               <li class="<?php if($paginaActual=='cambiarbg') echo 'active'; ?>"><a href="/cambiarbg.php"><i class="fa fa-picture-o"></i> Cambiar background</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-user">

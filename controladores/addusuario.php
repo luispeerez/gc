@@ -14,7 +14,7 @@ if( (isset($_POST['nombreUsuario'])) && (isset($_POST['contrasenaUsuario'])) && 
     $rs = $db->makeQuery("INSERT INTO usuario VALUES('', '".$nombreUsuario."', '".$contrasenaUsuario."' , '".$tipoUsuario."')");
   $db->close(); 
 }
-header('Location: /indexadmin.php');
+header('Location: /listausuarios.php');
 
 
 ?>

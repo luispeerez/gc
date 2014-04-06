@@ -11,6 +11,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     if( ($usuario === $reg['nombre_usuario']) && ($password === $reg['contrasena'])){
       session_start();
       $_SESSION['usuarioActivoID'] = $reg['id_usuario'];
+      $_SESSION['tipoUsuario'] = $reg['tipo_usuario'];
       $_SESSION['usuarioActivo'] = $usuario;
       header('Location: /indexadmin.php');
     }

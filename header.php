@@ -36,7 +36,7 @@
 				<header>
 					<div class="shadowblock">
 						<div class="logobar">
-							<a href="/"><img src="img/Logo.png" alt="GameCentral"></a>
+							<a href="/indexadmin.php"><img src="img/Logo.png" alt="GameCentral"></a>
 							<div class="social">
 								<a href="#" class="fb transition animated fadeInDown"></a>
 								<a href="#" class="tw transition animated fadeInDown"></a>
