@@ -125,6 +125,15 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 /*Review o noticia*/
 #content .container .review{padding: 15px}
 
+/*News o Noticias*/
+#content .container .news{padding: 2% ;position: relative;}
+#content .container .news + .news{margin-top: 15px;}
+#content .container .news .imagenews{float: left; padding: 0 2%;}
+#content .container .news .text{float: left; padding: 0 2%; border-left: 1px solid #9A9A9A; width: 60%;}
+#content .container .news .text h2{background: url(../img/barra.png) no-repeat left 30px;font-size: 20px;font-weight: 900;}
+#content .container .news .text h3{font-size: 12px;font-weight: 300;}
+
+
 /*Catálogo*/
 #content .container .brand {float: left; width: 45%; padding: 2%;}
 #content .container .brand + .brand {margin-left: 2%}

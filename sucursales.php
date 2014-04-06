@@ -6,7 +6,7 @@
 				<iframe src="http://static.parastorage.com/services/web/2.778.7/html/external/googleMap.html" width="100%" height="100%" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="allowfullscreen" frameborder="0" name="IFrame_ht3k4dc5" id="IFrame_ht3k4dc5"></iframe>		
 			</div>
 			<div class="text">
-				<h2>Sucursal Auascalientes</h2>
+				<h2>Sucursal Aguascalientes</h2>
 				<p>Aguascalientes, Aguascalientes</p>
 				<p>Plaza Universidad</p>
 				<p>Av. Universidad</p>
