@@ -39,7 +39,7 @@
 						<ul>
 						<li><a href="/">Inicio</a></li>
 						<li><a href="/review.php">Reseñas</a></li>
-						<li><a href="#">Catalogo</a></li>
+						<li><a href="/catalogo.php">Catalogo</a></li>
 						<li><a href="/sucursales.php">Sucursales</a></li>
 						<li><a href="/contacto.php">Contacto</a></li>							
 						</ul>

@@ -125,6 +125,24 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 /*Review o noticia*/
 #content .container .review{padding: 15px}
 
+/*Catálogo*/
+#content .container .brand {float: left; width: 45%; padding: 2%;}
+#content .container .brand + .brand {margin-left: 2%}
+#content .container .brand h1 {background: url(../img/barra.png) no-repeat left 36px;font-size: 26px;font-weight: 900;}
+#content .container .brand .product {float: left; width: 46%; padding: 2%;}
+#content .container .brand .product .console h1 {background: none;font-size: 16px;line-height: 20px;margin: 2px 0 5px}
+#content .container .brand .product .console h2 {background: url(../img/barra.png) no-repeat -42px bottom;font-size: 14px}
+#content .container .brand .product .console .imagepost {margin-bottom: -33px;}
+#content .container .brand .product .console .imagepost .overlay {height: 100%;left: 0;position: absolute;top: 0;width: 100%;
+	background: -webkit-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: -o-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: -moz-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+	background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,1));
+}
+#content .container .brand .product .gallery {margin-bottom: 0px;padding: 0px}
+#content .container .brand .product .gallery .bx-wrapper {z-index: 1}
+#content .container .brand .product .gallery img {;margin: 0 auto}
+
 /*Sucursales*/
 #content .container .sucursal{padding: 2.5% 0;position: relative;}
 #content .container .sucursal + .sucursal{margin-top: 15px}
@@ -141,8 +159,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 
 /*Contacto*/
 #content .container .contactbox{padding: 15px}
-#content .container .contactbox input[type="text"] , .contactbox textarea{background-color: #CC3333;border: 2;border-radius: 4px;margin-bottom: 23px;padding: 6px;width: 85%;}
-/*#content .container .contactbuton {padding: 15px}*/
+#content .container .contactbox input[type="text"] , .contactbox textarea{background-color: #CBCBCB;border: 0;border-radius: 3px;margin-bottom: 10px;padding: 6px;width: 85%;}
 
 /*Footer*/
 #footer{background-color: #FF4343;margin: 0px 0 0;}
