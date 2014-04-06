@@ -7,6 +7,7 @@
 				<h3>01-Abril-2014 | Autor: Redactor</h3>
 				<p>Conoce nuestro novedoso sistema de trabajo y forma parte de la industria de los video juegos. Si deseas saber cómo, te recomendamos leer nuestra nota completa.</p>
 			</div>
+			<a class="destacado" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -18,6 +19,7 @@
 				<p>sin lugar a dudas Grand Theft Auto V es el título más ambicioso de los</p>
 				<p>últimos 7 años, la calidad gráfica, variedad de juego y...</p>
 			</div>
+			<a class="resena" href="review.php"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -28,6 +30,7 @@
 				<p>La Xbox One con diseño de Titanfall que un supuesto trabajador de Microsoft filtró, finalmente no se comercializara. Resulta que...</p>
 				<br>
 			</div>
+			<a class="noticia" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -37,6 +40,7 @@
 				<h3>04-Abril-2014 | Autor: Redactor</h3>
 				<p>Konami confirma el primer DLC donde podremos jugar con Alucard en este primer contenido descargable de Castlevania: Lords of Shadow 2. Este DLC,sera llamado "Revelations", se pondrá a la venta el...</p>
 			</div>
+			<a class="noticia" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>

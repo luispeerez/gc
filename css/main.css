@@ -126,13 +126,16 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .review{padding: 15px}
 
 /*News o Noticias*/
-#content .container .news{padding: 2% ;position: relative;}
-#content .container .news + .news{margin-top: 15px;}
-#content .container .news .imagenews{float: left; padding: 0 2%;}
-#content .container .news .text{float: left; padding: 0 2%; border-left: 1px solid #9A9A9A; width: 60%;}
-#content .container .news .text h2{background: url(../img/barra.png) no-repeat left 30px;font-size: 20px;font-weight: 900;}
-#content .container .news .text h3{font-size: 12px;font-weight: 300;}
-
+#content .container .news {padding: 2% ;position: relative;}
+#content .container .news + .news {margin-top: 15px;}
+#content .container .news .imagenews {float: left; padding: 0 2%;}
+#content .container .news .text {float: left; padding: 0 2%; border-left: 1px solid #9A9A9A; width: 60%;}
+#content .container .news .text h2 {background: url(../img/barra.png) no-repeat left 30px;font-size: 20px;font-weight: 900;}
+#content .container .news .text h3 {font-size: 12px;font-weight: 300;}
+#content .container .news a {background: url(../img/more.png) no-repeat;display: block; right: 0; top: 0; position: absolute;width: 62px; height: 56px;}
+#content .container .news a.destacado:hover {background: url(../img/more_star.png) no-repeat;}
+#content .container .news a.resena:hover {background: url(../img/more_review.png) no-repeat;}
+#content .container .news a.noticia:hover {background: url(../img/more_notice.png) no-repeat;}
 
 /*Catálogo*/
 #content .container .brand {float: left; width: 45%; padding: 2%;}
