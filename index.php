@@ -31,11 +31,11 @@
 					$contador++;
 				?>
 					<div class="box card">
-				 		<div class="imagepost"><div class="overlay"></div><img src="<?php echo $imagenPost; ?>" alt="Grand Theft Auto V"></div>
+				 		<div class="imagepost"><div class="overlay"></div><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost; ?>" alt="Grand Theft Auto V"></a></div>
 						<section class="singlepost">
 					 		<div class="postTitle">
 						 		<h2>Destacados</h2>
-						 		<h1><?php echo $tituloNoticia; ?></h1>
+						 		<h1><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h1>
 					 		</div>
 							<p><?php echo $contenidoNoticia; ?></p>
 						</section>

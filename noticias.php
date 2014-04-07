@@ -4,23 +4,23 @@ include("clases/conexion.php");
 
 ?>
 	<div class="container">
-		<?php 
-		  $db = new Conexion();
-		  $rs = $db->makeQuery("SELECT *FROM noticia");
-		  $imagenes = array('img/gmc.png','img/gtavbg.png','img/titan.jpg');
-		  while($reg = $db->makeArray($rs)):
-			  $idNoticia = $reg['id_noticia'];
-			  $tituloNoticia = $reg['titulo_noticia'];
-			  $tipoNoticia = $reg['tipo_noticia'];
-			  $contenidoNoticia = $reg['contenido_noticia'];
-			  $fecha = $reg['fecha'];
-			  $autor = $reg['autor'];
-			  if($tipoNoticia == 'destacado')
-			  	$imagenPost = $imagenes[0];
-			  else if($tipoNoticia == 'resena')
-			  	$imagenPost = $imagenes[1];
-			  else
-			  	$imagenPost = $imagenes[2];
+			<?php 
+			$db = new Conexion();
+			$rs = $db->makeQuery("SELECT *FROM noticia");
+			$imagenes = array('img/gmc.png','img/gtavbg.png','img/titan.jpg');
+			while($reg = $db->makeArray($rs)):
+				$idNoticia = $reg['id_noticia'];
+				$tituloNoticia = $reg['titulo_noticia'];
+				$tipoNoticia = $reg['tipo_noticia'];
+				$contenidoNoticia = $reg['contenido_noticia'];
+				$fecha = $reg['fecha'];
+				$autor = $reg['autor'];
+				if($tipoNoticia == 'destacado')
+					$imagenPost = $imagenes[0];
+				else if($tipoNoticia == 'resena')
+					$imagenPost = $imagenes[1];
+				else
+					$imagenPost = $imagenes[2];
 			?>
 			<div class="news card">
 				<div class="imagenews"><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost ?>" alt="GC" width= 180 height=110></a></div>
