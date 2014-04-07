@@ -11,7 +11,7 @@ if( (isset($_POST['tituloNoticia'])) && (isset($_POST['tipoNoticia'])) && (isset
   $tituloNoticia = $_POST['tituloNoticia'];
   $tipoNoticia = $_POST['tipoNoticia'];
   $contenidoNoticia = $_POST['contenidoNoticia'];
-  $fecha = $_POST['fecha'];
+  $fecha = date('Y-m-d');
   $autor = $_POST['autor'];
   $db = new Conexion();
     $rs = $db->makeQuery("INSERT INTO noticia values('', '".$tituloNoticia."' , '".$tipoNoticia."' , '".$contenidoNoticia."' , '".$fecha."' , '".$autor."')");

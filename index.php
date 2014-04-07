@@ -14,7 +14,37 @@
 				</section>
 			</section>
 			<section class="notices">
-				<div class="box card">
+				<?php
+				include("clases/conexion.php"); 
+				$db = new Conexion();
+				$rs = $db->makeQuery("SELECT *FROM noticia WHERE tipo_noticia='destacado'");
+				$imagenes = array('img/titan.png','img/castle.png');
+				$contador = 0;
+				while($reg = $db->makeArray($rs)):
+					$idNoticia = $reg['id_noticia'];
+					$tituloNoticia = $reg['titulo_noticia'];
+					$contenidoNoticia = $reg['contenido_noticia'];
+					if($contador%2 == 0)
+						$imagenPost = $imagenes[0];
+					else
+						$imagenPost = $imagenes[1];
+					$contador++;
+				?>
+					<div class="box card">
+				 		<div class="imagepost"><div class="overlay"></div><img src="<?php echo $imagenPost; ?>" alt="Grand Theft Auto V"></div>
+						<section class="singlepost">
+					 		<div class="postTitle">
+						 		<h2>Destacados</h2>
+						 		<h1><?php echo $tituloNoticia; ?></h1>
+					 		</div>
+							<p><?php echo $contenidoNoticia; ?></p>
+						</section>
+					</div>
+				<?php
+				endwhile; 
+				?>
+				<div class="clear"></div>
+				<!--<div class="box card">
 			 		<div class="imagepost"><div class="overlay"></div><img src="img/titan.png" alt="Grand Theft Auto V"></div>
 					<section class="singlepost">
 				 		<div class="postTitle">
@@ -39,7 +69,7 @@
 						<p>Alucard tendrá sus propios poderes, de forma que podrá transformarse en lobo, en una bandada de murciélagos e incluso retroceder el tiempo.</p>
 					</section>
 				</div>
-				<div class="clear"></div>
+				<div class="clear"></div>-->
 			</section>
 		</div>
 		<div class="column right">

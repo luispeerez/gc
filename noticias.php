@@ -1,5 +1,41 @@
-<?php include("header.php");?>
+<?php 
+include("header.php");
+include("clases/conexion.php");
+
+?>
 	<div class="container">
+		<?php 
+		  $db = new Conexion();
+		  $rs = $db->makeQuery("SELECT *FROM noticia");
+		  $imagenes = array('img/gmc.png','img/gtavbg.png','img/titan.jpg');
+		  while($reg = $db->makeArray($rs)):
+			  $idNoticia = $reg['id_noticia'];
+			  $tituloNoticia = $reg['titulo_noticia'];
+			  $tipoNoticia = $reg['tipo_noticia'];
+			  $contenidoNoticia = $reg['contenido_noticia'];
+			  $fecha = $reg['fecha'];
+			  $autor = $reg['autor'];
+			  if($tipoNoticia == 'destacado')
+			  	$imagenPost = $imagenes[0];
+			  else if($tipoNoticia == 'resena')
+			  	$imagenPost = $imagenes[1];
+			  else
+			  	$imagenPost = $imagenes[2];
+			?>
+			<div class="news card">
+				<div class="imagenews"><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost ?>" alt="GC" width= 180 height=110></a></div>
+				<div class="text">
+					<h2><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h2>
+					<h3><?php echo $fecha; ?> | Autor: <?php echo $autor; ?></h3>
+					<p><?php echo $contenidoNoticia; ?></p>
+				</div>
+				<a class="<?php echo $tipoNoticia; ?> arrow" href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"></a>
+				<div class="clear"></div>
+			</div>
+		<?php	
+		 	endwhile;
+		?>
+		<!--
 		<div class="news card">
 			<div class="imagenews"><img src="img/gmc.png" alt="GC" width= 180 height=110></div>
 			<div class="text">
@@ -7,7 +43,7 @@
 				<h3>01-Abril-2014 | Autor: Redactor</h3>
 				<p>Conoce nuestro novedoso sistema de trabajo y forma parte de la industria de los video juegos. Si deseas saber cómo, te recomendamos leer nuestra nota completa.</p>
 			</div>
-			<a class="destacado" href="#"></a>
+			<a class="destacado arrow" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -19,7 +55,7 @@
 				<p>sin lugar a dudas Grand Theft Auto V es el título más ambicioso de los</p>
 				<p>últimos 7 años, la calidad gráfica, variedad de juego y...</p>
 			</div>
-			<a class="resena" href="review.php"></a>
+			<a class="resena arrow" href="review.php"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -30,7 +66,7 @@
 				<p>La Xbox One con diseño de Titanfall que un supuesto trabajador de Microsoft filtró, finalmente no se comercializara. Resulta que...</p>
 				<br>
 			</div>
-			<a class="noticia" href="#"></a>
+			<a class="noticia arrow" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="news card">
@@ -40,9 +76,10 @@
 				<h3>04-Abril-2014 | Autor: Redactor</h3>
 				<p>Konami confirma el primer DLC donde podremos jugar con Alucard en este primer contenido descargable de Castlevania: Lords of Shadow 2. Este DLC,sera llamado "Revelations", se pondrá a la venta el...</p>
 			</div>
-			<a class="noticia" href="#"></a>
+			<a class="noticia arrow" href="#"></a>
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
+	-->
 	</div>
 <?php include("footer.php");?>

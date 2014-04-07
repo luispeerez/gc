@@ -10,12 +10,13 @@
 			</div>
 		</div>
 		<select name="tipoNoticia">
-			<option value="Tumama">Tumama</option>
-			<option value="Tumama">Tumama</option>
-			<option value="Tumama">Tumama</option>
+			<option value="noticia">Noticia</option>
+			<option value="resena">Reseña</option>
+			<option value="destacado">Destacado</option>
 		</select>
 		<textarea name="contenidoNoticia" id="newPost" cols="120" rows="10"></textarea>
 		<button type="submit" class="btn btn-default">Crear noticia</button>
+		<input type="hidden" name="autor" value="<?php echo $usuarioActivo; ?>">
 	</form>
 
 <?php include('footerAdmin.php'); ?>

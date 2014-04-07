@@ -26,9 +26,9 @@ if(isset($_GET['id_noticia'])){
 			</div>
 		</div>
 		<select name="tipoNoticia" value="<?php echo $tipoNoticia ?>">
-			<option value="Tumama">Tumama</option>
-			<option value="Tumama">Tumama</option>
-			<option value="Tumama">Tumama</option>
+			<option value="noticia">Noticia</option>
+			<option value="resena">Reseña</option>
+			<option value="destacado">Destacado</option>
 		</select>
 		<textarea name="contenidoNoticia" id="newPost" cols="120" rows="10"><?php echo $contenidoNoticia ?></textarea>
 		<input type="hidden" name="fecha" value="<?php echo $fecha ?>">

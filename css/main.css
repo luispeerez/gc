@@ -96,26 +96,27 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .singlepost .postTitle h1{background: url(../img/barra.png) no-repeat left 48px;font-size: 34px;font-weight: 900;margin-top: -18px}
 #content .container .singlepost .postTitle h2{font-size: 18px}
 #content .container .singlepost p{text-align: justify;}
-
+#content .container .singlepost p *{background: none!important;color: #373737!important;font-size: 15px!important;line-height: 20px!important;}
+#content .container .singlepost p a{color: #3b5998!important}
 
 /*Home*/
 #content .container.home{}
 #content .container.home .column{float: left;width: 66%}
 #content .container.home .column.right{margin-left: 2%;width: 32%;}
 #content .container.home .imagepost{}
-#content .container.home .message{margin-bottom: 10px;padding: 10px;}
+#content .container.home .message{padding: 10px;}
 #content .container.home .message .singlepost.home.title{float: none;width: 100%}
 #content .container.home .message .singlepost.home h1{background-position-y: 42px;font-size: 26px}
 #content .container.home .message .singlepost.home p{}
 #content .container.home .message .singlepost.home .videobox{margin: 10px auto;}
 #content .container.home .notices{}
-#content .container.home .notices .box{float: left;padding: 2%;width: 45%;}
+#content .container.home .notices .box{float: left;margin-top: 10px;padding: 2%;width: 45%;}
 #content .container.home .notices .box + .box{margin-left: 2%}
 #content .container.home .notices .box .imagepost{margin-bottom: -33px}
 #content .container.home .notices .box .imagepost .overlay{display: none;}
 #content .container.home .notices .box .postTitle{margin-bottom: 0}
 #content .container.home .notices .box .postTitle h1{background: none;font-size: 18px;line-height: 20px;margin: 2px 0 5px}
-#content .container.home .notices .box .postTitle h2{background: url(../img/barra.png) no-repeat -42px bottom;font-size: 14px}
+#content .container.home .notices .box .postTitle h2{background: url(../img/barra.png) no-repeat -42px bottom;font-size: 14px;text-transform: capitalize;}
 #content .container.home .notices .box .singlepost p{text-align: left;}
 #content .container.home .gallery{margin-bottom: 15px;padding: 6px}
 #content .container.home .gallery .bx-wrapper{z-index: 1}
@@ -131,8 +132,10 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .news .imagenews {float: left; padding: 0 2%;}
 #content .container .news .text {float: left; padding: 0 2%; border-left: 1px solid #9A9A9A; width: 60%;}
 #content .container .news .text h2 {background: url(../img/barra.png) no-repeat left 30px;font-size: 20px;font-weight: 900;}
+#content .container .news .text h2 a{color: #373737}
 #content .container .news .text h3 {font-size: 12px;font-weight: 300;}
-#content .container .news a {background: url(../img/more.png) no-repeat;display: block; right: 0; top: 0; position: absolute;width: 62px; height: 56px;}
+#content .container .news .text p *{background: none!important;color: #373737!important;font-size: 15px!important;line-height: 20px!important;}
+#content .container .news a.arrow{background: url(../img/more.png) no-repeat;display: block; right: 0; top: 0; position: absolute;width: 62px; height: 56px;}
 #content .container .news a.destacado:hover {background: url(../img/more_star.png) no-repeat;}
 #content .container .news a.resena:hover {background: url(../img/more_review.png) no-repeat;}
 #content .container .news a.noticia:hover {background: url(../img/more_notice.png) no-repeat;}
