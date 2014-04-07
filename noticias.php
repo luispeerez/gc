@@ -6,7 +6,7 @@ include("clases/conexion.php");
 	<div class="container">
 			<?php 
 			$db = new Conexion();
-			$rs = $db->makeQuery("SELECT *FROM noticia");
+			$rs = $db->makeQuery("SELECT *FROM noticia ORDER BY fecha DESC");
 			$imagenes = array('img/gmc.png','img/gtavbg.png','img/titan.jpg');
 			while($reg = $db->makeArray($rs)):
 				$idNoticia = $reg['id_noticia'];

@@ -17,7 +17,7 @@
 				<?php
 				include("clases/conexion.php"); 
 				$db = new Conexion();
-				$rs = $db->makeQuery("SELECT *FROM noticia WHERE tipo_noticia='destacado'");
+				$rs = $db->makeQuery("SELECT *FROM noticia WHERE tipo_noticia='destacado' ORDER BY fecha DESC LIMIT 2 ");
 				$imagenes = array('img/titan.png','img/castle.png');
 				$contador = 0;
 				while($reg = $db->makeArray($rs)):
