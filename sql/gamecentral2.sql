@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 04-04-2014 a las 00:11:51
+-- Tiempo de generación: 07-04-2014 a las 17:55:27
 -- Versión del servidor: 5.5.35
 -- Versión de PHP: 5.4.26-1+deb.sury.org~precise+1
 
@@ -34,20 +34,17 @@ CREATE TABLE IF NOT EXISTS `noticia` (
   `fecha` date DEFAULT NULL,
   `autor` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_noticia`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `noticia`
 --
 
 INSERT INTO `noticia` (`id_noticia`, `titulo_noticia`, `tipo_noticia`, `contenido_noticia`, `fecha`, `autor`) VALUES
-(1, 'Titanfall', 'Tumama', 'contenido', '2014-04-05', 'admin'),
-(2, 'Arkham city', 'Tumama', 'Muy padre', '2014-04-05', 'admin'),
-(3, 'Fable', 'Tumama', 'Masomenos', '2014-04-03', 'admin'),
-(4, 'Halo', 'Tumama', 'Otra vez?', '2014-04-03', 'admin'),
-(5, 'Titanfall', 'Tumama', 'contenido de titanfall', '2014-04-04', 'admin'),
-(6, 'Smash bros', 'Tumama', 'contenido de smash', '2014-04-04', 'admin'),
-(7, 'Halo', 'Tumama', '<b>Otra vez?</b>', '2014-04-04', 'admin');
+(1, 'Smash bros WII U', 'resena', 'contenido', '2014-04-04', 'Luis'),
+(2, 'Titanfall', 'destacado', '<span style="color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 20px; line-height: 30px; background-color: rgb(201, 35, 101);">Â¡Ya es viernes de Atomix Podcast! Bienvenidos sean al episodio nÃºmero 13 del podcast con la informaciÃ³n mÃ¡s relevante de la semana en el mundo de los videojuegos, asÃ­ como el anÃ¡lisis y el buen humor del staff de Atomix.El dÃ­a de hoy podrÃ¡n escuchar cuÃ¡les son los lanzamiento</span><br>', '2014-04-05', 'Zero'),
+(3, 'Grand Theft Auto V', 'resena', 'Muy padre eeh', '2014-04-06', 'admin'),
+(4, 'Xbox 360', 'noticia', 'noticia contenido xbox', '2014-04-07', 'admin');
 
 -- --------------------------------------------------------
 
@@ -91,14 +88,17 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `contrasena` varchar(20) DEFAULT NULL,
   `tipo_usuario` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombre_usuario`, `contrasena`, `tipo_usuario`) VALUES
-(1, 'admin', '1234', 'administrador');
+(1, 'admin', '1234', 'administrador'),
+(2, 'Luis', '1234', 'colaborador'),
+(3, 'Serna', '1234', 'administrador'),
+(4, 'silva', '1234', 'colaborador');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

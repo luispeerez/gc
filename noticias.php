@@ -23,13 +23,13 @@ include("clases/conexion.php");
 					$imagenPost = $imagenes[2];
 			?>
 			<div class="news card">
-				<div class="imagenews"><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost ?>" alt="GC" width= 180 height=110></a></div>
+				<div class="imagenews"><a href="noticiaindividual.php?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost ?>" alt="GC" width= 180 height=110></a></div>
 				<div class="text">
-					<h2><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h2>
+					<h2><a href="noticiaindividual.php?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h2>
 					<h3><?php echo $fecha; ?> | Autor: <?php echo $autor; ?></h3>
 					<p><?php echo $contenidoNoticia; ?></p>
 				</div>
-				<a class="<?php echo $tipoNoticia; ?> arrow" href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"></a>
+				<a class="<?php echo $tipoNoticia; ?> arrow" href="noticiaindividual.php?id_noticia=<?php echo $idNoticia; ?>"></a>
 				<div class="clear"></div>
 			</div>
 		<?php	

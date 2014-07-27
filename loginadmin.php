@@ -1,27 +1,17 @@
 <?php include('headerAdmin.php');
-$alert = "";
-$usuario = "";
-$password = "";
-if(isset($_POST['username']) && isset($_POST['password'])){
-  $usuario = $_POST['username'];
-  $password = $_POST['password'];
-  $db = new Conexion();
-  $rs = $db->makeQuery("SELECT *FROM usuario");
-  while($reg = $db->makeArray($rs)){
-    if( ($usuario === $reg['nombre_usuario']) && ($password === $reg['contrasena'])){
-      session_start();
-      $_SESSION['usuarioActivoID'] = $reg['id_usuario'];
-      $_SESSION['tipoUsuario'] = $reg['tipo_usuario'];
-      $_SESSION['usuarioActivo'] = $usuario;
-      header('Location: /indexadmin.php');
-    }
-    else{
-      $alert = "Usuario o contraseña incorrecta";
-    }
-  }
-  $db->close(); 
-}
+    $alert = $_SESSION['error'];
+    $_SESSION = array();
 
+    // Si se desea destruir la sesión completamente, borre también la cookie de sesión.
+    // Nota: ¡Esto destruirá la sesión, y no la información de la sesión!
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000,
+            $params["path"], $params["domain"],
+            $params["secure"], $params["httponly"]
+        );
+    }
+    session_destroy();
 ?>
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -29,9 +19,9 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                   <div class="panel-title">Iniciar Sesión</div>
               </div>     
               <div style="padding-top:30px" class="panel-body" >
-                  <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                  <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"><?php echo $alert?></div>
                   <div class="alert alert-warning"><p><?php echo $alert ?></p></div>
-                  <form id="loginform" class="form-horizontal" role="form" action="/loginadmin.php" method="POST">
+                  <form id="loginform" class="form-horizontal" role="form" action="/controladores/login.php" method="POST">
                       <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
                         <input id="login-username" type="text" class="form-control" name="username" value="" autofocus placeholder="Usuario">                                        

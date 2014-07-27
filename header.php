@@ -56,5 +56,16 @@
 					</nav>
 					<div class="mist"></div>
 				</header>
+                <div id="mobileMenu">
+                    <select name="#" id="#">
+                    	<option value="#">Menu</option>
+                        <option value="/">Inicio</option>
+                        <option value="/noticias.php">Noticias</option>
+                        <option value="/catalogo.php">Catalogo</option>
+                        <option value="/sucursales.php">Sucursales</option>
+                        <option value="/contacto.php">Contacto</option>
+
+                    </select>
+                </div>
 				<div id="content">
 

@@ -1,6 +1,24 @@
 <?php include("header.php"); ?>
 
  	<div class="container home">
+
+		<?php  
+		// Config
+		$dbhost = 'localhost';  
+		$dbname = 'test';  
+		  
+		// Connect to test database  
+		$m = new Mongo("mongodb://$dbhost");  
+		$db = $m->$dbname;  
+		  
+		// select the collection  
+		$collection = $db->shows;  
+		  
+		// pull a cursor query  
+		$cursor = $collection->find();  
+		var_dump($cursor);
+		//phpinfo();
+		?>   		
 		<div class="column left"> 	
 			<section class="message card">
 	 			<div class="imagepost"><div class="overlay"></div><img src="img/tienda_atras.png" alt="Grand Theft Auto V"></div><div class="clear"></div>

@@ -13,21 +13,22 @@ if(isset($_GET['id_usuario'])){
 ?>
 
 	<h1>Modificar información de usuario</h1>
-	<form action="/controladores/addusuario.php" method="POST">
+	<form action="/controladores/editusuario.php" method="POST">
 		<div class="row">
 			<div class="col-lg-5">
 				<div class="form-group">
 					<input type="text" class="form-control" value="<?php echo $nombreUsuario; ?>" placeholder="Nombre de usuario" name="nombreUsuario">
+					<input type="hidden" name="idUsuarioModificado" value="<?php echo $idUsuario; ?>">
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-lg-5">
 				<div class="form-group">
 					<input type="text" class="form-control" value="<?php echo $contrasenaUsuario; ?>" placeholder="Contraseña de usuario" name="contrasenaUsuario">
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="row">
 			<div class="col-lg-5">
 				<div class="form-group">

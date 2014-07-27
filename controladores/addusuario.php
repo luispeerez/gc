@@ -9,9 +9,10 @@ $usuarioActivo = $_SESSION['usuarioActivo'];
 if( (isset($_POST['nombreUsuario'])) && (isset($_POST['contrasenaUsuario'])) && (isset($_POST['tipoUsuario']))  ) {
   $nombreUsuario = $_POST['nombreUsuario'];
   $contrasenaUsuario = $_POST['contrasenaUsuario'];
+  $contrasenaUsuario = md5($contrasenaUsuario);
   $tipoUsuario = $_POST['tipoUsuario'];
   $db = new Conexion();
-    $rs = $db->makeQuery("INSERT INTO usuario VALUES('', '".$nombreUsuario."', '".$contrasenaUsuario."' , '".$tipoUsuario."')");
+  $rs = $db->makeQuery("INSERT INTO usuario VALUES('', '".$nombreUsuario."', '".$contrasenaUsuario."' , '".$tipoUsuario."')");
   $db->close(); 
 }
 header('Location: /listausuarios.php');

@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   $usuarioActivo = "";
   include("clases/conexion.php");
   $foo = explode( ".php", basename($_SERVER['PHP_SELF']));
@@ -6,9 +7,13 @@
   $tipoUsuario = "";
   session_start();
   if(isset($_SESSION['usuarioActivo'])){
-  $usuarioActivo = $_SESSION['usuarioActivo'];
-  $usuarioActivoID = $_SESSION['usuarioActivoID'];
-  $tipoUsuario = $_SESSION['tipoUsuario'];
+    $usuarioActivo = $_SESSION['usuarioActivo'];
+    $usuarioActivoID = $_SESSION['usuarioActivoID'];
+    $tipoUsuario = $_SESSION['tipoUsuario'];
+  }
+  else if($paginaActual != 'loginadmin'){
+    $_SESSION['error'] = "Tiene que registrarse primero";
+    header('Location: /loginadmin.php');
   }
 ?>
 <!DOCTYPE html>
@@ -58,8 +63,6 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $usuarioActivo ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <!--<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>-->
-                  <li><a href="/modificarusuario.php?id_usuario=<?php echo $usuarioActivoID ?>"><i class="fa fa-gear"></i> Configuracion</a></li>
-                  <li class="divider"></li>
                   <li><a href="controladores/logout.php"><i class="fa fa-power-off"></i> Log Out</a></li>
                 </ul>
               </li>
