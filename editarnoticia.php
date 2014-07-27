@@ -1,5 +1,6 @@
-<?php include('headerAdmin.php'); 
-
+<?php 
+include('headerAdmin.php'); 
+include('controladores/encriptador.php');
 
 if(isset($_GET['id_noticia'])){
   $idNoticia = $_GET['id_noticia'];
@@ -9,6 +10,7 @@ if(isset($_GET['id_noticia'])){
 	  $tituloNoticia = $reg['titulo_noticia'];
 	  $tipoNoticia = $reg['tipo_noticia'];
 	  $contenidoNoticia = $reg['contenido_noticia'];
+	  $contenidoNoticia = desencriptarMensaje($contenidoNoticia);
 	  $fecha = $reg['fecha'];
 	  $autor = $reg['autor'];
   }

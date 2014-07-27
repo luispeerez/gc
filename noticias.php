@@ -1,6 +1,7 @@
 <?php 
 include("header.php");
 include("clases/conexion.php");
+include('controladores/encriptador.php');
 
 ?>
 	<div class="container">
@@ -13,6 +14,7 @@ include("clases/conexion.php");
 				$tituloNoticia = $reg['titulo_noticia'];
 				$tipoNoticia = $reg['tipo_noticia'];
 				$contenidoNoticia = $reg['contenido_noticia'];
+				$contenidoNoticia = desencriptarMensaje($contenidoNoticia);
 				$fecha = $reg['fecha'];
 				$autor = $reg['autor'];
 				if($tipoNoticia == 'destacado')

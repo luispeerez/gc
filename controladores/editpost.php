@@ -1,6 +1,8 @@
 <?php 
 
 include("../clases/conexion.php");
+include("../controladores/encriptador.php");
+
 session_start();
 if(isset($_SESSION['usuarioActivo'])){
 $usuarioActivo = $_SESSION['usuarioActivo'];
@@ -11,6 +13,11 @@ if( (isset($_POST['tituloNoticia'])) && (isset($_POST['tipoNoticia'])) && (isset
   $tituloNoticia = $_POST['tituloNoticia'];
   $tipoNoticia = $_POST['tipoNoticia'];
   $contenidoNoticia = $_POST['contenidoNoticia'];
+
+  //Encriptando la noticia 
+  $contenidoNoticia = encriptarMensaje($contenidoNoticia);
+
+
   $fecha = date('Y-m-d', time());
   $autor = $usuarioActivo;
   $db = new Conexion();

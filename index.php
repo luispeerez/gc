@@ -1,10 +1,14 @@
-<?php include("header.php"); ?>
+<?php 
+include("header.php"); 
+include('controladores/encriptador.php');
+
+?>
 
  	<div class="container home">
 
 		<?php  
 		// Config
-		$dbhost = 'localhost';  
+		/*$dbhost = 'localhost';  
 		$dbname = 'test';  
 		  
 		// Connect to test database  
@@ -16,7 +20,7 @@
 		  
 		// pull a cursor query  
 		$cursor = $collection->find();  
-		var_dump($cursor);
+		var_dump($cursor);*/
 		//phpinfo();
 		?>   		
 		<div class="column left"> 	
@@ -42,6 +46,7 @@
 					$idNoticia = $reg['id_noticia'];
 					$tituloNoticia = $reg['titulo_noticia'];
 					$contenidoNoticia = $reg['contenido_noticia'];
+					$contenidoNoticia = desencriptarMensaje($contenidoNoticia);
 					if($contador%2 == 0)
 						$imagenPost = $imagenes[0];
 					else
@@ -49,11 +54,11 @@
 					$contador++;
 				?>
 					<div class="box card">
-				 		<div class="imagepost"><div class="overlay"></div><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost; ?>" alt="Grand Theft Auto V"></a></div>
+				 		<div class="imagepost"><div class="overlay"></div><a href="noticiaindividual.php?id_noticia=<?php echo $idNoticia; ?>"><img src="<?php echo $imagenPost; ?>" alt="Grand Theft Auto V"></a></div>
 						<section class="singlepost">
 					 		<div class="postTitle">
 						 		<h2>Destacados</h2>
-						 		<h1><a href="noticiaindividual?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h1>
+						 		<h1><a href="noticiaindividual.php?id_noticia=<?php echo $idNoticia; ?>"><?php echo $tituloNoticia; ?></a></h1>
 					 		</div>
 							<p><?php echo $contenidoNoticia; ?></p>
 						</section>
